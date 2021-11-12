@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+</head>
+
+<link rel="stylesheet" href="./style.css">
+
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous"></script>
+<title>Document</title>
+</head>
+
+<body>
+    <!--------------------Navigation-------------------------->
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="./images/logo.png" alt=""></a>
+        </div>
+
+        <ul>
+
+            <li class="items"><a href="#">Home</a></li>
+            <li class="items"><a href="#">Menu</a></li>
+            <li class="items"><a href="#">Contact</a></li>
+            <li class="items"><a href="#">Register</a></li>
+
+            <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+
+        </div>
+    </nav>
+    <!--------------------Navigation End-------------------------->
+
+    <div class="banner">
+        <div class="banner-text">
+
+            <img src="./images/bg-logo.png" alt="">
+            <div class="hero-buttons">
+
+                <p>In the mood for a munch?...</p>
+                <a href="#" class="hero-btn">Order Now</a>
+                <a href="#" class="hero-btn">Sign Up</a>
+            </div>
+
+        </div>
+
+
+        <div class="bg-img"><img src="./images/bg-1.png" alt=""></div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <section id="about">
+        <h1 class="title">Title</h1>
+        <div class="container">
+
+            <div class="text-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed veniam eveniet, expedita officiis voluptatum praesentium sequi rem fuga odit.</p>
+            </div>
+            <div class="img-box">
+                <img src="./images/img-3.jpg" alt="">
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+    <section id="contact">
+
+        <h1 class="section-title">Title </h1>
+    </section>
+    <section id="login">
+
+        <h1 class="section-title">Title </h1>
+    </section>
+
+    <footer>
+
+        <p>footer</p>
+    </footer>
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            $('.btn').click(function() {
+                $('.items').toggleClass("show")
+                $('ul li').toggleClass("hide")
+                var logo = document.querySelector("logo")
+                logo.style.flexDirection = "column";
+            });
+
+        });
+    </script>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
