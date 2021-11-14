@@ -30,22 +30,24 @@
 
 <body>
     <!--------------------Navigation-------------------------->
-    <nav>
+    <nav class="navbar">
         <div class="logo">
-            <a href="#"><img src="./images/logo.png" alt=""></a>
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div class="toggle-button">
+            <a href="#"><i class="fas fa-bars"></i></a>
         </div>
 
-        <ul>
 
-            <li class="items"><a href="#">Home</a></li>
-            <li class="items"><a href="#">Menu</a></li>
-            <li class="items"><a href="#">Contact</a></li>
-            <li class="items"><a href="#">Register</a></li>
-
-            <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
-        </ul>
-
+        <div class="navbar-links">
+            <ul>
+                <li class="items"><a href="#">Home</a></li>
+                <li class="items"><a href="#">Menu</a></li>
+                <li class="items"><a href="#">Contact</a></li>
+                <li class="items"><a href="#">Register</a></li>
+            </ul>
         </div>
+
     </nav>
     <!--------------------Navigation End-------------------------->
 
@@ -110,17 +112,16 @@
 
 
 
-    <script>
+    <!-- <script>
         $(document).ready(function() {
             $('.btn').click(function() {
                 $('.items').toggleClass("show")
                 $('ul li').toggleClass("hide")
-                var logo = document.querySelector("logo")
-                logo.style.flexDirection = "column";
+
             });
 
         });
-    </script>
+    </script> -->
     <script src="./app.js"></script>
 
 </body>
