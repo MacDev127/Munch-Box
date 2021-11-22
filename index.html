@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <link rel="stylesheet" href="./style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,44 +17,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
-</head>
-
-<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
 
 
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous"></script>
-<title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <title>Munch Box</title>
 </head>
 
 <body>
     <!--------------------Navigation-------------------------->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="./images/logo.png" alt="">
-        </div>
-        <div class="toggle-button">
-            <a href="#"><i class="fas fa-bars"></i></a>
-        </div>
+    <nav>
+        <ul>
+            <li class="logo"><img src="./images/logo.png" alt=""></li>
+            <li class="btn"><span class="fas fa-bars" </span></li>
+            <div class="nav-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Register</a></li>
+            </div>
+            <div class="nav-right">
+                <li class="search-box">
+                    <input type="search" placeholder="Search">
+                    <label class="icon">
 
+            <span class="fas fa-search"></span>
+ 
+            </label>
 
-        <div class="navbar-links">
-            <ul>
-                <li class="items"><a href="#">Home</a></li>
-                <li class="items"><a href="#">Menu</a></li>
-                <li class="items"><a href="#">Contact</a></li>
-                <li class="items"><a href="#">Register</a></li>
-            </ul>
-        </div>
+                </li>
+                <li class="nav-button"><a href="#"><button>Sign In</button></a></li>
+                <div class="log-user">
+                    <li class="user"><i class="fas fa-user"></i></li>
+                </div>
 
+            </div>
+        </ul>
     </nav>
     <!--------------------Navigation End-------------------------->
 
-    <div class="banner">
+    <section class="banner">
         <div class="banner-text">
 
             <img src="./images/bg-logo.png" alt="">
@@ -68,7 +74,7 @@
         <div class="bg-img"><img src="./images/bg-1.png" alt=""></div>
 
 
-    </div>
+    </section>
 
 
 
@@ -108,21 +114,15 @@
         <p>footer</p>
     </footer>
 
-
-
-
-
-    <!-- <script>
-        $(document).ready(function() {
-            $('.btn').click(function() {
-                $('.items').toggleClass("show")
-                $('ul li').toggleClass("hide")
-
-            });
-
+    <script>
+        $('nav ul li.btn span').click(function() {
+            $('nav ul .nav-items').toggleClass("show");
+            $('nav ul li.btn span').toggleClass("show");
         });
-    </script> -->
-    <script src="./app.js"></script>
+    </script>
+
+
+    <!-- <script src="./app.js"></script> -->
 
 </body>
 
