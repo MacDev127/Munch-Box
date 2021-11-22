@@ -30,7 +30,7 @@
     
     nav {
         background: rgb(161, 6, 6);
-        padding: 1px 20px;
+        padding: 20px 20px;
         color: #fff;
         box-shadow: 0px 0px 10px #000;
     }
@@ -177,6 +177,10 @@
         .nav-items {
             flex: 4;
         }
+        .nav-button,
+        .log-user {
+            display: none;
+        }
     }
     
     @media screen and (max-width: 800px) {
@@ -190,7 +194,7 @@
         nav ul .nav-items {
             z-index: -1;
             position: fixed;
-            top: -350px;
+            top: -360px;
             background-color: rgb(161, 6, 6);
             width: 100%;
             right: 0;
@@ -198,7 +202,7 @@
             transition: top .4s;
         }
         nav ul .nav-items.show {
-            top: 60px;
+            top: 70px;
         }
         .nav-items li {
             text-align: center;
