@@ -1,0 +1,359 @@
+<link rel="stylesheet" href="./style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<title>Munch Box</title>
+</head>
+
+<body>
+    <!--------------------Navigation-------------------------->
+    <nav>
+        <ul>
+            <li class="logo"><img src="./images/logo.png" alt=""></li>
+            <li class="btn"><span class="fas fa-bars" </span></li>
+            <div class="nav-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+                <!-- <li><a href="#">Register</a></li> -->
+            </div>
+            <div class="nav-right">
+                <li class="search-box">
+                    <input type="search" placeholder="What do you fancy?">
+                    <label class="icon">
+
+            <span class="fas fa-search"></span>
+ 
+            </label>
+
+                </li>
+                <li class="nav-button"><a href="#"><button>Sign In</button></a></li>
+                <div class="log-user">
+                    <li class="user"><i class="fas fa-user"></i></li>
+                </div>
+
+            </div>
+        </ul>
+    </nav>
+    <!--------------------Navigation End-------------------------->
+
+    <section class="menu">
+
+        <h1 class="title">Whats on the Menu</h1>
+        <div class="menu-wrapper">
+
+            <div id="menu-box">
+                <img src="./images/food-7.png" class="img-1">
+                <p>Chinese</p>
+
+            </div>
+            <div id="menu-box">
+                <img src="./images/food-1.png" alt="">
+                <p>Pizza</p>
+
+            </div>
+            <div id="menu-box">
+                <img src="./images/food-3.png" alt="">
+                <p>Mexican</p>
+
+            </div>
+            <div id="menu-box">
+                <img src="./images/food-4.png" alt="">
+                <p>Italian</p>
+
+            </div>
+            <div id="menu-box">
+                <img src="./images/food-6.png" alt="">
+                <p>Chip-Shop</p>
+
+            </div>
+            <div id="menu-box">
+                <img src="./images/food-8.png" alt="">
+                <p>Indian</p>
+
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+    <section class="popular" id="popular">
+
+        <h1 class="title">Best Sellers</h1>
+
+
+        <div class="box-container">
+
+            <div class="box">
+
+                <img src="./images/burger.jpg" alt="">
+                <h3>Legenderry Burger</h3>
+                <span class="price"> $5 - $20 </span>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+
+                <div id="overlay" onclick="off()"></div>
+                <div id="text">The world-famous Legenderry Burger is as flexible as it is desirable. The Legenderry is actually a beefburger (the beef is there’s no ham) and consists of a freshly-ground, 100% Irish beef patty, cooked medium in a normal soft bun with
+                    a slight glazing on top. Then layered with iceberg lettuce, fresh tomato, onions, pickles and house dressing. Then mustard, mayo or ketchup to taste</div>
+
+                <!-- <button onclick="on()">Info</button> -->
+                <button>Order Now</button>
+
+            </div>
+
+
+            <div class="box">
+                <img src="./images/chinese.jpg" alt="">
+                <h3>Chicken Chop Suey</h3>
+                <span class="price"> $5 - $20 </span>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div id="overlay" onclick="off()"></div>
+                <div id="text">Chicken Chop Suey (which means ‘assorted pieces’) is a main containing…well, assorted pieces of chicken (or beef, prawns, pork and vegetables). All stir-fried rapidly with eggs, bean sprouts, cabbage, celery and bound in thick tasty sauce
+                    – then delivered chop-chop, by us. Singapore Fried Noodles will have your taste buds singing thanks to vermicelli noodles seasoned with curry powder, veggies, scrambled eggs and a mix of chicken, beef, char siu pork or prawns.</div>
+
+                <!-- <button onclick="on()">Info</button> -->
+                <button>Order Now</button>
+            </div>
+
+            <div class="box">
+                <img src="./images/pizza.jpg" alt="">
+                <h3>Margherita
+                </h3>
+                <span class="price"> $5 - $20 </span>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div id="overlay" onclick="off()"></div>
+                <div id="text">Every Italian city has created a pizza to be proud of. Pizza Margherita is the famed Neapolitan icon made from San Marzano tomatoes (red), buffalo mozzarella (white) and fresh basil (green) to echo an edible Italian Flag. The quintessential
+                    Sicilian Pizza is the beloved Capricciosa, aka the Grandma Pizza as it’s one of the oldest styles,originally thick-crusted with tomato sauce, mozzarella, ‘shrooms, anchovies, onions, ham, artichokes and olives.</div>
+
+                <button onclick="on()">Info</button>
+                <button>Order Now</button>
+            </div>
+            <div class="box">
+
+                <img src="./images/mexican.jpg" alt="">
+                <h3>Tacos</h3>
+                <span class="price"> $5 - $20 </span>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div id="overlay" onclick="off()"></div>
+                <div id="text">Tacos have come a long ways since their Aztec days. Many American chefs have put their own spin on this Mexican dish and made it their own. You might see duck confit tacos with a cherry reduction sauce as a menu item at fancy restaurants.
+                    Have you tasted Korean BBQ tacos from a food truck? What about a chocolate taco shell with ice cream filling for dessert?4 Whether it is authentic Mexican tacos al pastor or tofu-stuffed tacos, they are all worth trying and all worth
+                    exploring. They will soon have you saying… ¡Que rico!</div>
+
+                <button onclick="on()">Info</button>
+                <button>Order Now</button>
+            </div>
+            <div class="box">
+                <img src="./images/ship-shop.jpg" alt="">
+                <h3>Fish & Chips</h3>
+                <span class="price"> $5 - $20 </span>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                < <div id="overlay" onclick="off()"></div>
+            <div id="text">If there is one iconic dish that the UK is known for around the world it is fish and chips. This simple but finger licking meal is both humble and can be eat with your hands wrapped up in paper from a local “chippy” or in a smart restaurant.
+                Either way there is no denying people love this dish with 382 million portions being sold every year by fish and chip shops alone.</div>
+
+            <button onclick="on()">Info</button>
+            <button>Order Now</button>
+        </div>
+        <div class="box">
+            <img src="./images/indian.jpg" alt="">
+            <h3>Chicken Korma</h3>
+            <span class="price"> $5 - $20 </span>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div id="overlay" onclick="off()"></div>
+            <div id="text">If you’re chicken when it comes to hot spices, sweat ye not, because mild and creamy Chicken Korma will be, quite literally, up your street (and you’ll be showing excellent taste – it’s now Britain’s most wanted dish). Rogan Josh is a hugely
+                popular lamb curry dish (and a really cool rap name) with a sauce flavoured by garlic, ginger, onions and aromatic spices such as cloves, bay leaves, cardamom and cinnamon.</div>
+
+            <button onclick="on()">Info</button>
+            <button>Order Now</button>
+        </div>
+
+        </div>
+    </section>
+
+
+    <!-- popular section ends -->
+    <!-- order section starts  -->
+
+    <section class="order" id="order">
+
+        <h3 class="sub-heading"> order now </h3>
+        <h1 class="heading"> free and fast </h1>
+
+        <form action="">
+
+            <div class="inputBox">
+                <div class="input">
+                    <span>your name</span>
+                    <input type="text" placeholder="enter your name">
+                </div>
+                <div class="input">
+                    <span>your number</span>
+                    <input type="number" placeholder="enter your number">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>your order</span>
+                    <input type="text" placeholder="enter food name">
+                </div>
+                <div class="input">
+                    <span>additional food</span>
+                    <input type="test" placeholder="extra with food">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>how musch</span>
+                    <input type="number" placeholder="how many orders">
+                </div>
+                <div class="input">
+                    <span>date and time</span>
+                    <input type="datetime-local">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>your address</span>
+                    <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input">
+                    <span>your message</span>
+                    <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <input type="submit" value="order now" class="btn">
+
+        </form>
+
+    </section>
+
+    <!-- order section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!----------------------- Footer---------------------------- -->
+    <footer>
+        <div class="footer-wrapper">
+
+            <div class="footer-app">
+                <h2 class="foot-title">Download our Apps</h2>
+
+                <li><a href=""><i class="fab fa-google-play"></i>  Google Play</a></li>
+                <li><a href=""><i class="fab fa-app-store-ios"></i></a> App Store</li>
+            </div>
+
+            <div class="footer-contact">
+                <h2 class="foot-title">Help</h2>
+
+                <li class="link"><a href="#">Contact</a></li>
+                <li class="link"><a href="#">About</a></li>
+                <!-- <li class="link"><a href="#">FAQs</a></li> -->
+                <li class="link"><a href="#">Menu</a></li>
+                <li class="link"><a href="#">Privacy</a></li>
+
+
+            </div>
+
+            <div class="mail-list">
+                <h2 class="foot-title">Join our Mailing List</h2>
+                <form action="#">
+
+                    <div class="form-box">
+
+                        <input type="text" name="EmailAddress" placeholder="Enter Email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </form>
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="footer-social">
+            <div class="socials">
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </div>
+
+            <p>&copy; Munch Box | All rights Reserved 2021</p>
+        </div>
+
+    </footer>
+
+    <script>
+        $('nav ul li.btn span').click(function() {
+            $('nav ul .nav-items').toggleClass("show");
+            $('nav ul li.btn span').toggleClass("show");
+        });
+    </script>
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

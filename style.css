@@ -7,6 +7,7 @@
         
         html {
             overflow: scroll;
+            scroll-behavior: smooth;
             overflow-x: hidden;
         }
         
@@ -412,6 +413,136 @@
             color: #fff;
             transition: .4s ease-in-out;
         }
+        /*------------------- Best Sellers ------------*/
+        
+        .popular .box-container {
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-auto-flow: row;
+            gap: 1em;
+            padding-top: 50px;
+            margin: 0 20px;
+        }
+        
+        .box {
+            padding: 16px;
+            background: #fff;
+            box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+            border: 1px solid #000;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .popular .box-container .box img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+            border-radius: .5rem;
+        }
+        
+        .box h3 {
+            color: #333;
+            font-size: 20px;
+            padding-top: 1rem;
+        }
+        
+        .popular .box-container .box .stars i {
+            color: gold;
+            font-size: 16px;
+            padding: 1rem .1rem;
+        }
+        /* ---------------Best seller end ---------------*/
+        /* Test */
+        
+        #overlay {
+            position: absolute;
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            cursor: pointer;
+            background: linear-gradient(180deg, #A71212, #000);
+            mix-blend-mode: multiply;
+            opacity: 1;
+            transition: 0.5s;
+        }
+        
+        #text {
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            font-size: 20px;
+            color: #fff;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            font-size: 14px;
+            width: 80%;
+            text-align: justify;
+            line-height: 25px;
+        }
+        /* Test end */
+        /* ------------------Order Form---------------*/
+        
+        .order form {
+            max-width: 90rem;
+            border-radius: .5rem;
+            box-shadow: var(--box-shadow);
+            border: .1rem solid rgba(0, 0, 0, .2);
+            background: #fff;
+            padding: 1.5rem;
+            margin: 0 auto;
+        }
+        
+        .order form .inputBox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .order form .inputBox .input {
+            width: 49%;
+        }
+        
+        .order form .inputBox .input span {
+            display: block;
+            padding: .5rem 0;
+            font-size: 1.5rem;
+            color: var(--light-color);
+        }
+        
+        .order form .inputBox .input input,
+        .order form .inputBox .input textarea {
+            background: #eee;
+            border-radius: .5rem;
+            padding: 1rem;
+            font-size: 1.6rem;
+            color: var(--black);
+            text-transform: none;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        
+        .order form .inputBox .input input:focus,
+        .order form .inputBox .input textarea:focus {
+            border: .1rem solid var(--green);
+        }
+        
+        .order form .inputBox .input textarea {
+            height: 20rem;
+            resize: none;
+        }
+        
+        .order form .btn {
+            margin-top: 0;
+        }
+        /*------------------ Order Form -------------------*/
+        /*------------- Best Sellers End----------- */
         /* -------------Menu Section End----------------------- */
         
         #contact {
@@ -641,7 +772,46 @@
             transition: ease-in .1s;
         }
         /* contact Form end*/
-        /* -----------Contact Page End ------------*/
+        /* -----------Contact Page End ----------------*/
+        /* ---------------Menu Page------------------- */
+        
+        .menu {
+            background-color: #f4f4f4;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .menu-wrapper {
+            padding-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+            align-items: center;
+            text-align: center;
+        }
+        
+        #menu-box {
+            margin: 0 20px;
+            height: 100%;
+            padding: 40px 10px 20px 10px;
+            border-radius: 5px;
+        }
+        
+        #menu-box img {
+            height: 130px;
+            width: 130px;
+            filter: drop-shadow(5px 5px 10px #000);
+        }
+        
+        #menu-box p {
+            color: #000;
+            font-size: 22px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding-top: 10px;
+            text-align: center;
+        }
+        /* ----------------Menu Page End ----------------*/
         /* -------------Individual Pages End --------*/
         
         footer {

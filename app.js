@@ -1,6 +1,10 @@
-// const toggleButton = document.getElementsByClassName('toggle-button')[0]
-// const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+// function on() {
+//     document.getElementById('overlay').style.display = "block";
+//     document.getElementById('text').style.display = "block";
 
-// toggleButton.addEventListener('click', () => {
-//     navbarLinks.classList.toggle('active')
-// });
+// }
+
+// function off() {
+//     document.getElementById('overlay').style.display = "none";
+//     document.getElementById('text').style.display = "none";
+// }
