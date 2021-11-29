@@ -507,6 +507,7 @@
         .menu-section {
             background-color: #f4f4f4;
             min-height: 330vh;
+            position: relative;
         }
         
         .menu-wrapper {
@@ -571,137 +572,6 @@
             color: #fff;
             transition: .4s ease-in-out;
         }
-        /*------------------- Best Sellers ------------*/
-        
-        .popular .box-container {
-            display: grid;
-            grid-template-columns: repeat(3, 2fr);
-            grid-auto-flow: row;
-            gap: 1em;
-            padding-top: 50px;
-            margin: 0 20px;
-            background-color: #f4f4f4;
-            height: 100vh;
-        }
-        
-        .box {
-            padding: 16px;
-            background: #fff;
-            box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-            border: .1rem solid rgba(0, 0, 0, .2);
-            border-radius: 5px;
-            text-align: center;
-        }
-        
-        .popular .box-container .box img {
-            height: 200px;
-            object-fit: cover;
-            width: 100%;
-            border-radius: .5rem;
-        }
-        
-        .box h3 {
-            color: #333;
-            font-size: 20px;
-            padding-top: 1rem;
-        }
-        
-        .popular .box-container .box .stars i {
-            color: gold;
-            font-size: 16px;
-            padding: 1rem .1rem;
-        }
-        
-        .cart {
-            padding: 9px 25px;
-            background-color: #A71212;
-            border: 1px solid #Fff;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease 0s;
-            color: #f4f4f4;
-            letter-spacing: 1px;
-        }
-        
-        .cart .fas {
-            margin: 0 10px;
-        }
-        /* ---------------Best seller end ---------------*/
-        /* Test */
-        /* Test end */
-        /* ------------------Order Form---------------*/
-        
-        .order {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            max-width: 70rem;
-            border-radius: .5rem;
-            border: .1rem solid rgba(0, 0, 0, .2);
-            background: #fff;
-            padding: 1.5rem;
-            margin: 40px auto;
-            box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-        }
-        
-        select {
-            background: #eee;
-            border-radius: .5rem;
-            padding: 1rem;
-            font-size: 1.6rem;
-            text-transform: none;
-            margin-bottom: 1rem;
-            width: 100%;
-            border: .1rem solid #000;
-        }
-        
-        .order form .inputBox {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        
-        .order form .inputBox .input {
-            width: 49%;
-        }
-        
-        .order form .inputBox .input span {
-            display: block;
-            padding: .5rem 0;
-            font-size: 1.5rem;
-        }
-        
-        .order form .inputBox .input input,
-        .order form .inputBox .input textarea {
-            background: #eee;
-            border-radius: .5rem;
-            padding: 1rem;
-            font-size: 1.6rem;
-            text-transform: none;
-            margin-bottom: 1rem;
-            width: 100%;
-        }
-        
-        .order form .inputBox .input input:focus,
-        .order form .inputBox .input textarea:focus {
-            border: .1rem solid #000;
-        }
-        
-        .order form .inputBox .input textarea {
-            height: 20rem;
-            resize: none;
-        }
-        
-        .order form .btn {
-            margin-top: 0;
-        }
-        
-        .order-submit {
-            width: 14%;
-        }
-        /*------------------ Order Form -------------------*/
-        /*------------- Best Sellers End----------- */
         /* -------------Menu Section End----------------------- */
         
         #contact {
@@ -970,7 +840,183 @@
             padding-top: 10px;
             text-align: center;
         }
-        /* ----------------Menu Page End ----------------*/
+        /*------------------- Best Sellers ------------*/
+        
+        .popular .box-container {
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-auto-flow: row;
+            gap: 1em;
+            padding-top: 50px;
+            margin: 0 20px;
+            background-color: #f4f4f4;
+            height: 100vh;
+        }
+        
+        .box {
+            padding: 16px;
+            background: #fff;
+            box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+            border: .1rem solid rgba(0, 0, 0, .2);
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .popular .box-container .box img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+            border-radius: .5rem;
+        }
+        
+        .box h3 {
+            color: #333;
+            font-size: 20px;
+            padding-top: 1rem;
+        }
+        
+        .popular .box-container .box .stars i {
+            color: gold;
+            font-size: 16px;
+            padding: 1rem .1rem;
+        }
+        
+        .cart {
+            padding: 9px 25px;
+            background-color: #A71212;
+            border: 1px solid #Fff;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            color: #f4f4f4;
+            letter-spacing: 1px;
+        }
+        
+        .cart .fas {
+            margin: 0 10px;
+        }
+        /* ---------------Best seller end ---------------*/
+        /* ------------------Order Form---------------*/
+        
+        .title-wrapper {
+            position: relative;
+        }
+        
+        .order {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 70rem;
+            border-radius: .5rem;
+            border: .1rem solid rgba(0, 0, 0, .2);
+            background: #fff;
+            padding: 1.5rem;
+            margin: 40px auto;
+            box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        }
+        
+        select {
+            background: #eee;
+            border-radius: .5rem;
+            padding: 1rem;
+            font-size: 1.6rem;
+            text-transform: none;
+            margin-bottom: 1rem;
+            width: 100%;
+            border: .1rem solid #000;
+        }
+        
+        .order form .inputBox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .order form .inputBox .input {
+            width: 49%;
+        }
+        
+        .order form .inputBox .input span {
+            display: block;
+            padding: .5rem 0;
+            font-size: 1.5rem;
+        }
+        
+        .order form .inputBox .input input,
+        .order form .inputBox .input textarea {
+            background: #eee;
+            border-radius: .5rem;
+            padding: 1rem;
+            font-size: 1.6rem;
+            text-transform: none;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        
+        .order form .inputBox .input input:focus,
+        .order form .inputBox .input textarea:focus {
+            border: .1rem solid #000;
+        }
+        
+        .order form .inputBox .input textarea {
+            height: 20rem;
+            resize: none;
+        }
+        
+        .order form .btn {
+            margin-top: 0;
+        }
+        
+        .order-submit {
+            width: 14%;
+        }
+        /*--------------------------- Order Form -----------------------*/
+        /*---------------------- Best Sellers End----------------------------------- */
+        /* ------------------------------Menu Page End ----------------------------------*/
+        /*--------------------------- Registration Page----------------- */
+        
+        .reg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            height: 100vh;
+            padding: 10px;
+        }
+        
+        .reg-container {
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+            max-width: 700px;
+            width: 100%;
+            padding: 25px 30px;
+            border-radius: 5px;
+        }
+        
+        .reg-container form .user-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        form .user-details .input-area {
+            margin: 20px 0 12px 0;
+            width: calc(100% / 2 - 20px);
+        }
+        
+        .user-details .input-area .details {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        
+        .user-details .input-area input {
+            height: 45px;
+            width: 100%;
+        }
+        /*------------------- Registration Page End --------------------------*/
         /* -------------Individual Pages End --------*/
         
         footer {
@@ -1183,6 +1229,6 @@
                 grid-template-columns: repeat(1, 1fr);
             }
             .order {
-                margin-top: 250%;
+                margin: 190% 20px 40px 20px;
             }
         }

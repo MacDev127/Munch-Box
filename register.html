@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <title>Munch Box</title>
+</head>
+
+<body>
+    <!--------------------Navigation-------------------------->
+    <nav>
+        <ul>
+            <li class="logo"><img src="./images/logo.png" alt=""></li>
+            <li class="btn"><span class="fas fa-bars" </span></li>
+            <div class="nav-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+                <!-- <li><a href="#">Register</a></li> -->
+            </div>
+            <div class="nav-right">
+                <li class="search-box">
+                    <input type="search" placeholder="What do you fancy?">
+                    <label class="icon">
+
+            <span class="fas fa-search"></span>
+ 
+            </label>
+
+                </li>
+                <li class="nav-button"><a href="#"><button>Sign In</button></a></li>
+                <div class="log-user">
+                    <li class="user"><i class="fas fa-user"></i><i class="fas fa-shopping-cart"></i></li>
+
+
+                </div>
+
+            </div>
+        </ul>
+    </nav>
+    <!--------------------Navigation End-------------------------->
+
+    <!-- Register Form -->
+    <h1 class="title">Register Now</h1>
+    <section class="reg">
+
+        <div class="reg-container">
+
+
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-area">
+                        <span class="details">First Name</span>
+                        <input type="text" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="input-area">
+                        <span class="details">Last Name</span>
+                        <input type="text" placeholder="Enter Last Name" required>
+                    </div>
+                    <div class="input-area">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter Email" required>
+                    </div>
+                    <div class="input-area">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter Number" required>
+                    </div>
+                    <div class="input-area">
+                        <span class="details">Password</span>
+                        <input type="text" placeholder="Enter Password" required>
+                    </div>
+                    <div class="input-area">
+                        <span class="details">Confirm Password</span>
+                        <input type="text" placeholder="Confirm Password" required>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="">
+      <span class="dot one"></span>
+      <span class = "gender">Male</span>
+    </label>
+                        <label for="">
+      <span class="dot one"></span>
+      <span class = "gender">FeMale</span>
+    </label>
+                        <label for="">
+      <span class="dot one"></span>
+      <span class = "gender">Prefer Not To Say</span>
+    </label>
+                    </div>
+                </div>
+                <div class="reg-button">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Register Form End -->
+
+    <!----------------------- Footer---------------------------- -->
+    <footer>
+        <div class="footer-wrapper">
+
+            <div class="footer-app">
+                <h2 class="foot-title">Download our Apps</h2>
+
+                <li><a href=""><i class="fab fa-google-play"></i>  Google Play</a></li>
+                <li><a href=""><i class="fab fa-app-store-ios"></i></a> App Store</li>
+            </div>
+
+            <div class="footer-contact">
+                <h2 class="foot-title">Help</h2>
+
+                <li class="link"><a href="#">Contact</a></li>
+                <li class="link"><a href="#">About</a></li>
+                <!-- <li class="link"><a href="#">FAQs</a></li> -->
+                <li class="link"><a href="#">Menu</a></li>
+                <li class="link"><a href="#">Privacy</a></li>
+
+
+            </div>
+
+            <div class="mail-list">
+                <h2 class="foot-title">Join our Mailing List</h2>
+                <form action="#">
+
+                    <div class="form-box">
+
+                        <input type="text" name="EmailAddress" placeholder="Enter Email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </form>
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="footer-social">
+            <div class="socials">
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </div>
+
+            <p>&copy; Munch Box | All rights Reserved 2021</p>
+        </div>
+
+    </footer>
+
+    <script>
+        $('nav ul li.btn span').click(function() {
+            $('nav ul .nav-items').toggleClass("show");
+            $('nav ul li.btn span').toggleClass("show");
+        });
+    </script>
+
+
+    <!-- <script src="./app.js"></script> -->
+
+</body>
+
+</html>
