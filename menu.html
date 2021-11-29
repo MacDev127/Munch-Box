@@ -23,9 +23,9 @@
             <li class="logo"><img src="./images/logo.png" alt=""></li>
             <li class="btn"><span class="fas fa-bars" </span></li>
             <div class="nav-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./contact.html">Contact</a></li>
                 <!-- <li><a href="#">Register</a></li> -->
             </div>
             <div class="nav-right">
@@ -216,98 +216,91 @@
 
             </div>
         </div>
+    </section>
+    <!-- order section ends -->
 
 
-        <!-- popular section ends -->
-        <!-- order section starts  -->
-        <div class="title-wrapper"></div>
-        <h1 class="title">Place Order</h1>
-        </div>
-
-        <div class="order" id="order">
+    <!-- order section starts  -->
+    <div class="title-wrapper"></div>
+    <h1 class="title">Place Order</h1>
+    </div>
 
 
-            <form action="">
+    <section class="order-section">
 
-                <div class="inputBox">
-                    <div class="input">
-                        <span>Name</span>
-                        <input type="text" placeholder="Full Name">
+        <div class="order-container">
 
+
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-area">
+                        <span class="details">First Name</span>
+                        <input type="text" placeholder="Enter First Name" required>
                     </div>
-                    <div class="input">
-                        <span>Phone</span>
-                        <input type="number" placeholder="Number">
+                    <div class="input-area">
+                        <span class="details">Last Name</span>
+                        <input type="text" placeholder="Enter Last Name" required>
                     </div>
-                </div>
-                <div class="inputBox">
+                    <div class="input-area">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter Email" required>
+                    </div>
+                    <div class="input-area">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter Number" required>
+                    </div>
+                    <div class="input-area">
+                        <span class="details">Order</span>
 
-                    <div class="input">
-                        <span>Order</span>
                         <select name="food-type">
-                          <option value="Order">  Burger, Pizza etc</option>
-                          <option value="Burger">Burger</option>
-                          <option value="Pizza">Pizza</option>
-                          <option value="Chinese">Chinese</option>
-                          <option value="Chip Shop">Chip Shop</option>
-                          <option value="Indian">Indian</option>
-                          <option value="Mexican">Mexican</option>
-                          <option value="Other">Other</option>
-                        </select>
-
-                        <!-- <input type="text" placeholder="Burger, Pizza, Curry etc"> -->
+                                  <option value="Order">  Burger, Pizza etc</option>
+                                  <option value="Burger">Burger</option>
+                                  <option value="Pizza">Pizza</option>
+                                  <option value="Chinese">Chinese</option>
+                                  <option value="Chip Shop">Chip Shop</option>
+                                  <option value="Indian">Indian</option>
+                                  <option value="Mexican">Mexican</option>
+                                  <option value="Other">Other</option>
+                                </select>
                     </div>
-                    <div class="input">
-                        <span>Sides</span>
+                    <div class="input-area">
+                        <span class="details">Sides</span>
                         <select name="food-type">
-                          <option value="Order">Chips, Dips, Drinks etc</option>
-                          <option value="Chips">Chips</option>
-                          <option value="Onion Rings">Rings</option>
-                          <option value="Mozzarella Sticks">Mozzarella Sticks</option>
-                          <option value="Coca-Cola">Coca-Cola</option>
-                          <option value="Fanta">fanta</option>
-                          <option value="Sprite">Sprite</option>
-                          <option value="Water">Water</option>
-                          <option value="Other">Other</option>
-                        </select>
-
-
+                                    <option value="Order">Chips, Dips, Drinks etc</option>
+                                    <option value="Chips">Chips</option>
+                                    <option value="Onion Rings">Rings</option>
+                                    <option value="Mozzarella Sticks">Mozzarella Sticks</option>
+                                    <option value="Coca-Cola">Coca-Cola</option>
+                                    <option value="Fanta">fanta</option>
+                                    <option value="Sprite">Sprite</option>
+                                    <option value="Water">Water</option>
+                                    <option value="Other">Other</option>
+                                  </select>
                     </div>
-                </div>
-
-
-                <div class="inputBox">
-                    <div class="input">
-                        <span>Order Quantity</span>
+                    <div class="input-area">
+                        <span class="details">Quanity</span>
                         <input type="number" placeholder="Quantity">
                     </div>
-                    <div class="input">
-                        <span>Delivery Date and Time</span>
+                    <div class="input-area">
+                        <span class="details">Delivery Time & Date</span>
                         <input type="datetime-local">
                     </div>
-                </div>
-                <div class="inputBox">
-                    <div class="input">
-                        <span>Address</span>
-                        <textarea name="" placeholder="Full Address" id="" cols="30" rows="10"></textarea>
+                    <div class="input-area">
+                        <span class="details">Address</span>
+                        <textarea name="#" placeholder="Address " id="one" cols="40" rows="10"></textarea>
                     </div>
-                    <div class="input">
-                        <span>Order Description</span>
-                        <textarea name="" placeholder="Description " id="" cols="30" rows="10"></textarea>
+                    <div class="input-area">
+                        <span class="details">Order Description</span>
+                        <textarea name="#" placeholder="Description " id="#" cols="40" rows="10"></textarea>
                     </div>
                 </div>
 
-                <button class="order-submit">Place Order</button>
+                <div class="reg-btn">
+                    <input class="btn-reg" type="submit" value="Place Order">
+                </div>
             </form>
-
-            <div/>
-
-
+        </div>
     </section>
-
-
-
-    <!-- order section ends -->
 
 
 

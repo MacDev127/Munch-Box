@@ -32,9 +32,9 @@
             <li class="logo"><img src="./images/logo.png" alt=""></li>
             <li class="btn"><span class="fas fa-bars" </span></li>
             <div class="nav-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./contact.html">Contact</a></li>
                 <!-- <li><a href="#">Register</a></li> -->
             </div>
             <div class="nav-right">
@@ -42,15 +42,44 @@
                     <input type="search" placeholder="What do you fancy?">
                     <label class="icon">
 
-            <span class="fas fa-search"></span>
- 
-            </label>
+        <span class="fas fa-search"></span>
+
+        </label>
 
                 </li>
-                <li class="nav-button"><a href="#"><button>Sign In</button></a></li>
+                <li class="list-item">
+
+                    <a href="#"><button class="drop">Sign In</button></a>
+                    <ul class="nav-drop-menu">
+                        <div class="center">
+                            <h1>Login</h1>
+                            <form method="post">
+                                <div class="txt_field">
+                                    <input type="text" required>
+
+                                    <label>Username</label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="password" required>
+                                    <span></span>
+                                    <label>Password</label>
+                                </div>
+                                <div class="pass">Forgot Password?</div>
+                                <input type="submit" value="Login">
+                                <div class="signup_link">
+                                    Not a member? <a href="./register.html">Signup</a>
+                                </div>
+                            </form>
+                        </div>
+                    </ul>
+                </li>
                 <div class="log-user">
-                    <li class="user"><i class="fas fa-user"></i></li>
+                    <li class="user"><i class="fas fa-user"></i><i class="fas fa-shopping-cart"></i></li>
+
+
+
                 </div>
+
 
             </div>
         </ul>
