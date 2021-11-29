@@ -38,17 +38,46 @@
             </label>
 
                 </li>
-                <li class="nav-button"><a href="#"><button>Sign In</button></a></li>
+                <li class="list-item">
+
+                    <a href="#"><button class="drop">Sign In</button></a>
+                    <ul class="nav-drop-menu">
+                        <div class="center">
+                            <h1>Login</h1>
+                            <form method="post">
+                                <div class="txt_field">
+                                    <input type="text" required>
+
+                                    <label>Username</label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="password" required>
+                                    <span></span>
+                                    <label>Password</label>
+                                </div>
+                                <div class="pass">Forgot Password?</div>
+                                <input type="submit" value="Login">
+                                <div class="signup_link">
+                                    Not a member? <a href="#">Signup</a>
+                                </div>
+                            </form>
+                        </div>
+                    </ul>
+                </li>
                 <div class="log-user">
-                    <li class="user"><i class="fas fa-user"></i></li>
+                    <li class="user"><i class="fas fa-user"></i><i class="fas fa-shopping-cart"></i></li>
+
+
+
                 </div>
+
 
             </div>
         </ul>
     </nav>
     <!--------------------Navigation End-------------------------->
 
-    <section class="menu">
+    <section class="menu-section">
 
         <h1 class="title">Whats on the Menu</h1>
         <div class="menu-wrapper">
@@ -86,196 +115,196 @@
 
 
         </div>
+        <div class="popular" id="popular">
 
+            <h1 class="title">Best Sellers</h1>
+
+
+            <div class="box-container">
+
+                <div class="box">
+
+                    <img src="./images/burger.jpg" alt="">
+                    <h3>Legenderry Burger</h3>
+                    <span class="price"> £5 </span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="cart">Add to cart<i class="fas fa-shopping-cart"></i></button>
+
+
+                </div>
+
+
+                <div class="box">
+                    <img src="./images/chinese.jpg" alt="">
+                    <h3>Chicken Chop Suey</h3>
+                    <span class="price"> £4 </span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+
+                    <button class="cart">Add to cart<i class="fas fa-shopping-cart"></i></button>
+                </div>
+
+                <div class="box">
+                    <img src="./images/pizza.jpg" alt="">
+                    <h3>Margherita
+                    </h3>
+                    <span class="price"> £6 - £15 </span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                    <button class="cart">Add to cart<i class="fas fa-shopping-cart"></i></button>
+                </div>
+                <div class="box">
+
+                    <img src="./images/mexican.jpg" alt="">
+                    <h3>Tacos</h3>
+                    <span class="price"> £5 - £20 </span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                    <button class="cart">Add to cart<i class="fas fa-shopping-cart"></i></button>
+                </div>
+                <div class="box">
+                    <img src="./images/ship-shop.jpg" alt="">
+                    <h3>Fish & Chips</h3>
+                    <span class="price"> £6.50 </span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                    <button class="cart">Add to cart<i class="fas fa-shopping-cart"></i></button>
+                </div>
+                <div class="box">
+                    <img src="./images/indian.jpg" alt="">
+                    <h3>Chicken Korma</h3>
+                    <span class="price"> £6 </span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                    <button class="cart">Add to cart<i class="fas fa-shopping-cart"></i></button> </div>
+
+            </div>
+        </div>
+
+
+        <!-- popular section ends -->
+        <!-- order section starts  -->
+
+        <h1 class="title">Place Order</h1>
+
+        <div class="order" id="order">
+
+
+            <form action="">
+
+                <div class="inputBox">
+                    <div class="input">
+                        <span>Name</span>
+                        <input type="text" placeholder="Full Name">
+
+                    </div>
+                    <div class="input">
+                        <span>Phone</span>
+                        <input type="number" placeholder="Number">
+                    </div>
+                </div>
+                <div class="inputBox">
+
+                    <div class="input">
+                        <span>Order</span>
+                        <select name="food-type">
+                          <option value="Order">  Burger, Pizza etc</option>
+                          <option value="Burger">Burger</option>
+                          <option value="Pizza">Pizza</option>
+                          <option value="Chinese">Chinese</option>
+                          <option value="Chip Shop">Chip Shop</option>
+                          <option value="Indian">Indian</option>
+                          <option value="Mexican">Mexican</option>
+                          <option value="Other">Other</option>
+                        </select>
+
+                        <!-- <input type="text" placeholder="Burger, Pizza, Curry etc"> -->
+                    </div>
+                    <div class="input">
+                        <span>Sides</span>
+                        <select name="food-type">
+                          <option value="Order">Chips, Dips, Drinks etc</option>
+                          <option value="Chips">Chips</option>
+                          <option value="Onion Rings">Rings</option>
+                          <option value="Mozzarella Sticks">Mozzarella Sticks</option>
+                          <option value="Coca-Cola">Coca-Cola</option>
+                          <option value="Fanta">fanta</option>
+                          <option value="Sprite">Sprite</option>
+                          <option value="Water">Water</option>
+                          <option value="Other">Other</option>
+                        </select>
+
+
+                    </div>
+                </div>
+
+
+                <div class="inputBox">
+                    <div class="input">
+                        <span>Order Quantity</span>
+                        <input type="number" placeholder="Quantity">
+                    </div>
+                    <div class="input">
+                        <span>Delivery Date and Time</span>
+                        <input type="datetime-local">
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>Address</span>
+                        <textarea name="" placeholder="Full Address" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="input">
+                        <span>Order Description</span>
+                        <textarea name="" placeholder="Description " id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <button class="order-submit">Place Order</button>
+            </form>
+
+            <div/>
 
 
     </section>
 
-    <section class="popular" id="popular">
 
-        <h1 class="title">Best Sellers</h1>
-
-
-        <div class="box-container">
-
-            <div class="box">
-
-                <img src="./images/burger.jpg" alt="">
-                <h3>Legenderry Burger</h3>
-                <span class="price"> $5 - $20 </span>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-
-                <div id="overlay" onclick="off()"></div>
-                <div id="text">The world-famous Legenderry Burger is as flexible as it is desirable. The Legenderry is actually a beefburger (the beef is there’s no ham) and consists of a freshly-ground, 100% Irish beef patty, cooked medium in a normal soft bun with
-                    a slight glazing on top. Then layered with iceberg lettuce, fresh tomato, onions, pickles and house dressing. Then mustard, mayo or ketchup to taste</div>
-
-                <!-- <button onclick="on()">Info</button> -->
-                <button>Order Now</button>
-
-            </div>
-
-
-            <div class="box">
-                <img src="./images/chinese.jpg" alt="">
-                <h3>Chicken Chop Suey</h3>
-                <span class="price"> $5 - $20 </span>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div id="overlay" onclick="off()"></div>
-                <div id="text">Chicken Chop Suey (which means ‘assorted pieces’) is a main containing…well, assorted pieces of chicken (or beef, prawns, pork and vegetables). All stir-fried rapidly with eggs, bean sprouts, cabbage, celery and bound in thick tasty sauce
-                    – then delivered chop-chop, by us. Singapore Fried Noodles will have your taste buds singing thanks to vermicelli noodles seasoned with curry powder, veggies, scrambled eggs and a mix of chicken, beef, char siu pork or prawns.</div>
-
-                <!-- <button onclick="on()">Info</button> -->
-                <button>Order Now</button>
-            </div>
-
-            <div class="box">
-                <img src="./images/pizza.jpg" alt="">
-                <h3>Margherita
-                </h3>
-                <span class="price"> $5 - $20 </span>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div id="overlay" onclick="off()"></div>
-                <div id="text">Every Italian city has created a pizza to be proud of. Pizza Margherita is the famed Neapolitan icon made from San Marzano tomatoes (red), buffalo mozzarella (white) and fresh basil (green) to echo an edible Italian Flag. The quintessential
-                    Sicilian Pizza is the beloved Capricciosa, aka the Grandma Pizza as it’s one of the oldest styles,originally thick-crusted with tomato sauce, mozzarella, ‘shrooms, anchovies, onions, ham, artichokes and olives.</div>
-
-                <button onclick="on()">Info</button>
-                <button>Order Now</button>
-            </div>
-            <div class="box">
-
-                <img src="./images/mexican.jpg" alt="">
-                <h3>Tacos</h3>
-                <span class="price"> $5 - $20 </span>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div id="overlay" onclick="off()"></div>
-                <div id="text">Tacos have come a long ways since their Aztec days. Many American chefs have put their own spin on this Mexican dish and made it their own. You might see duck confit tacos with a cherry reduction sauce as a menu item at fancy restaurants.
-                    Have you tasted Korean BBQ tacos from a food truck? What about a chocolate taco shell with ice cream filling for dessert?4 Whether it is authentic Mexican tacos al pastor or tofu-stuffed tacos, they are all worth trying and all worth
-                    exploring. They will soon have you saying… ¡Que rico!</div>
-
-                <button onclick="on()">Info</button>
-                <button>Order Now</button>
-            </div>
-            <div class="box">
-                <img src="./images/ship-shop.jpg" alt="">
-                <h3>Fish & Chips</h3>
-                <span class="price"> $5 - $20 </span>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                < <div id="overlay" onclick="off()"></div>
-            <div id="text">If there is one iconic dish that the UK is known for around the world it is fish and chips. This simple but finger licking meal is both humble and can be eat with your hands wrapped up in paper from a local “chippy” or in a smart restaurant.
-                Either way there is no denying people love this dish with 382 million portions being sold every year by fish and chip shops alone.</div>
-
-            <button onclick="on()">Info</button>
-            <button>Order Now</button>
-        </div>
-        <div class="box">
-            <img src="./images/indian.jpg" alt="">
-            <h3>Chicken Korma</h3>
-            <span class="price"> $5 - $20 </span>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-            </div>
-            <div id="overlay" onclick="off()"></div>
-            <div id="text">If you’re chicken when it comes to hot spices, sweat ye not, because mild and creamy Chicken Korma will be, quite literally, up your street (and you’ll be showing excellent taste – it’s now Britain’s most wanted dish). Rogan Josh is a hugely
-                popular lamb curry dish (and a really cool rap name) with a sauce flavoured by garlic, ginger, onions and aromatic spices such as cloves, bay leaves, cardamom and cinnamon.</div>
-
-            <button onclick="on()">Info</button>
-            <button>Order Now</button>
-        </div>
-
-        </div>
-    </section>
-
-
-    <!-- popular section ends -->
-    <!-- order section starts  -->
-
-    <section class="order" id="order">
-
-        <h3 class="sub-heading"> order now </h3>
-        <h1 class="heading"> free and fast </h1>
-
-        <form action="">
-
-            <div class="inputBox">
-                <div class="input">
-                    <span>your name</span>
-                    <input type="text" placeholder="enter your name">
-                </div>
-                <div class="input">
-                    <span>your number</span>
-                    <input type="number" placeholder="enter your number">
-                </div>
-            </div>
-            <div class="inputBox">
-                <div class="input">
-                    <span>your order</span>
-                    <input type="text" placeholder="enter food name">
-                </div>
-                <div class="input">
-                    <span>additional food</span>
-                    <input type="test" placeholder="extra with food">
-                </div>
-            </div>
-            <div class="inputBox">
-                <div class="input">
-                    <span>how musch</span>
-                    <input type="number" placeholder="how many orders">
-                </div>
-                <div class="input">
-                    <span>date and time</span>
-                    <input type="datetime-local">
-                </div>
-            </div>
-            <div class="inputBox">
-                <div class="input">
-                    <span>your address</span>
-                    <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="input">
-                    <span>your message</span>
-                    <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
-                </div>
-            </div>
-
-            <input type="submit" value="order now" class="btn">
-
-        </form>
-
-    </section>
 
     <!-- order section ends -->
 
