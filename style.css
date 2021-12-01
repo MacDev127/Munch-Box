@@ -117,7 +117,7 @@
                 cursor: pointer;
             }
             
-            button {
+            .drop {
                 padding: 9px 25px;
                 background-color: #A71212;
                 border: 1px solid #Fff;
@@ -324,57 +324,6 @@
                 background-color: #2ec4b6;
             }
             /*----------------------------- --------------Nav Login Form end ----------------*/
-            
-            @media screen and (max-width: 1052px) {
-                nav {
-                    padding: 10px 40px 10px 0px;
-                    box-shadow: none;
-                }
-                .logo {
-                    display: none;
-                }
-                .nav-items {
-                    flex: 4;
-                }
-                .nav-button,
-                .log-user {
-                    display: none;
-                }
-                .nav-right {
-                    padding-top: 20px;
-                }
-            }
-            
-            @media screen and (max-width: 800px) {
-                nav ul li.btn {
-                    display: block;
-                }
-                nav {
-                    z-index: 1;
-                    padding: 5px 40px 40px 0;
-                }
-                nav ul .nav-items {
-                    z-index: 1;
-                    position: fixed;
-                    top: -380px;
-                    background-color: #A71212;
-                    width: 100%;
-                    right: 0;
-                    display: inline-block;
-                    transition: top .4s;
-                }
-                nav ul .nav-items.show {
-                    top: 70px;
-                }
-                .nav-items li {
-                    text-align: center;
-                    line-height: 50px;
-                    margin: 50px 0;
-                }
-                .nav-items li a {
-                    text-align: center;
-                }
-            }
             /*  ------------ Navigation end----------- */
             /*-------------- Banner Area--------------------------- */
             
@@ -488,7 +437,7 @@
                 max-width: 700px;
             }
             
-            .img-container h2 {
+            .sub-heading {
                 color: #000;
                 font-size: 40px;
                 font-weight: 400;
@@ -1179,20 +1128,29 @@
                 letter-spacing: 1px;
             }
             
+            .footer-app {
+                padding-top: 60px;
+            }
+            
             .footer-app li {
                 list-style: none;
                 padding: 10px;
                 letter-spacing: 2px;
                 color: #f4f4f4;
                 font-weight: 400;
-                border: 1px solid #f4f4f4;
                 border-radius: 5px;
-                margin: 12px 0;
+                margin: 15px 0;
+                text-align: left;
+                box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
             }
             
             .footer-app a {
                 text-decoration: none;
                 color: #f4f4f4;
+            }
+            
+            .footer-app li a:hover {
+                color: #000;
             }
             
             .footer-app .fab {
@@ -1216,7 +1174,7 @@
             .footer-contact li a {
                 color: #f4f4f4;
                 letter-spacing: 1px;
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: 400;
             }
             
@@ -1226,7 +1184,7 @@
             }
             
             .link a:hover {
-                color: #a30305;
+                color: #000;
                 transition: .2s ease;
             }
             
@@ -1268,7 +1226,8 @@
                 align-items: center;
                 flex-direction: column;
                 padding-top: 50px;
-                margin-right: 4%;
+                padding-bottom: 5px;
+                margin-right: 6%;
             }
             
             .socials li {
@@ -1279,16 +1238,28 @@
                 text-decoration: none;
             }
             
+            .socials li a:hover {
+                color: #000;
+                transition: .2s ease-in;
+            }
+            
             .fab {
                 color: #f4f4f4;
                 font-size: 16px;
                 padding: 14px;
             }
             
+            .socials .fab:hover {
+                color: #000;
+                transition: .2s ease-in;
+            }
+            
             .socials {
                 display: flex;
             }
             /* --------------------------Media Queries----------------- */
+            
+            @media screen and (min-width: 1200px) {}
             
             @media screen and (max-width: 992px) {
                 .bg-img img {
@@ -1378,5 +1349,114 @@
                 }
                 form .user-details .input-area {
                     width: 100%;
+                }
+            }
+            
+            @media screen and (max-width: 1052px) {
+                nav {
+                    padding: 10px 40px 10px 0px;
+                    box-shadow: none;
+                }
+                .logo {
+                    display: none;
+                }
+                .nav-items {
+                    flex: 4;
+                }
+                .nav-button,
+                .log-user {
+                    display: none;
+                }
+                .nav-right {
+                    padding-top: 20px;
+                }
+            }
+            
+            @media screen and (max-width: 800px) {
+                nav ul li.btn {
+                    display: block;
+                }
+                nav {
+                    z-index: 1;
+                    padding: 5px 40px 40px 0;
+                }
+                nav ul .nav-items {
+                    z-index: 1;
+                    position: fixed;
+                    top: -380px;
+                    background-color: #A71212;
+                    width: 100%;
+                    right: 0;
+                    display: inline-block;
+                    transition: top .4s;
+                }
+                nav ul .nav-items.show {
+                    top: 70px;
+                }
+                .nav-items li {
+                    text-align: center;
+                    line-height: 50px;
+                    margin: 50px 0;
+                }
+                .nav-items li a {
+                    text-align: center;
+                }
+                .drop {
+                    display: none;
+                }
+            }
+            
+            @media screen and (max-width: 375px) {
+                .drop {
+                    display: none;
+                }
+                nav ul {
+                    margin: 0 20px;
+                }
+                .nav-items li {
+                    padding-right: 35%;
+                }
+                .banner-img img {
+                    height: 400px;
+                    text-align: center;
+                }
+                .banner-text {
+                    justify-content: center;
+                }
+                .hero-buttons p {
+                    font-size: 20px;
+                    text-align: center;
+                    padding: 40px 40px 40px 0;
+                }
+                .title {
+                    font-size: 30px;
+                }
+                .about-box {
+                    flex-direction: column;
+                }
+                .about-box p {
+                    text-align: justify;
+                }
+                .img-container {
+                    width: 90%;
+                }
+                .sub-heading {
+                    font-size: 30px;
+                }
+                .menu-box img {
+                    height: 100px;
+                    width: 100px;
+                }
+                .contact-box img {
+                    height: 200px;
+                }
+                .mail-list {
+                    padding-top: 20px;
+                }
+                .form-box {
+                    padding: 10px 0;
+                }
+                .form-box #submit {
+                    padding: 3px;
                 }
             }
